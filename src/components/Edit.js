@@ -22,7 +22,7 @@ function Edit() {
         setAddress(data.address);
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [id]);
 
   const handleSubmit = () => {
     if (name && email && number && address) {
